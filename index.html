@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FormSubmit.co</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+
+        body{
+            background: linear-gradient(pink,skyblue);
+        }
+
+        .container{
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .main{
+            border: 1px solid;
+            width: 60vw;
+            height: 70vh;
+            margin: 5%;
+            border-radius: 18px;
+        }
+
+        .main:hover {
+            box-shadow: 2px 3px 2px 1px rgb(255, 115, 65);
+        }
+
+        h1{
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            margin-top: 10px;
+        }
+
+        .main form{
+           align-content: center;
+           margin-top: 18px;
+           font-size: larger;
+        }
+
+        input:hover{
+            background-color: rgb(44, 34, 34);
+            color: azure;
+        }
+
+        button{
+            height: 20px;
+            width: 80px;
+            border-radius: 15px;
+            border-color: rgb(47, 104, 85);
+
+        }
+
+        button:hover{
+            background: linear-gradient(rgb(165, 104, 104),gray);
+            color: chartreuse;
+        }
+    </style>
+</head>
+<body> 
+    <center>
+        <h1>FORM SUBMIT.CO</h1>
+    <div class="container">
+        <div class="main">
+            <center>
+            <form action="https://formsubmit.co/vishnuvishnu21801@gmail.com" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="number">Mno:</label>
+                <input type="number" id="number" name="number" required><br><br>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="gender">Gender:&nbsp;</label>
+                <input type="radio" id="gender" name="gender" required>Male
+                <input type="radio" id="gender" name="gender" required>Female <br><br>
+        
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea><br><br>
+        
+                <button type="submit">Send</button>
+            </form>
+            </center>
+        </div>
+    </div>
+    </center>
+</body>
+</html>
